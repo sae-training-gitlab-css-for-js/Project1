@@ -3,10 +3,64 @@
   font-family: 'Lato', sans-serif;
 }
 
-html,
-body {
+html, body{
   margin: 0;
   padding: 0;
+
+}
+main {
+  background-color: hsl(0deg, 0%, 40%);
+  border-top-width: 4px;
+  border-top-style: solid;
+  border-top-color: hsl(0deg, 0%, 60%);
+}
+
+h1{
+  font-size: 1rem;
 }
 
 /* Add styles here! */
+.card {
+  background-color: hsl(0, 0%, 100%);
+  /*margin: 40px;*/
+  margin-top:40px;
+  margin-bottom:40px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 3px;
+  border-bottom-width: 4px;
+  border-bottom-style: solid;
+  border-bottom-color: hsl(0deg, 0%, 60%);
+  /*width: 50%;*/
+}
+.indented-heading {
+    background-color: hsl(45deg, 100%, 50%);
+    border-bottom-width: 4px;
+    border-bottom-style: solid;
+    border-bottom-color: hsl(45deg, 100%, 40%);
+    width: 50%;
+    font-size: 1rem;
+    margin-left: -21px;
+    margin-top: 5px;
+    padding: 10px;
+    /*align-content: center;  */
+}
+
+.max-width-wrapper{
+  /* max-width: 80%;
+  min-width: 200px;*/
+  margin-left: 15%;
+  margin-right: 15%;
+ padding-left: 16px;
+  padding-right: 16px;
+  padding: 16px;
+}
+
+.intro-chunk {
+  width: 60%;
+}
+
+strong {
+  color: hsl(160deg, 100%, 30%);
+}
+
