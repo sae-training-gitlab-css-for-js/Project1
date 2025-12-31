@@ -6,7 +6,7 @@
 html, body{
   margin: 0;
   padding: 0;
-
+  min-width: 150px;
 }
 main {
   background-color: hsl(0deg, 0%, 40%);
@@ -15,52 +15,82 @@ main {
   border-top-color: hsl(0deg, 0%, 60%);
 }
 
-h1{
-  font-size: 1rem;
+h1 {
+  font-size: 1.25rem;
 }
 
-/* Add styles here! */
+/* Add styles for iPhone here! */
 .card {
   background-color: hsl(0, 0%, 100%);
-  /*margin: 40px;*/
   margin-top:40px;
   margin-bottom:40px;
+  margin-left: -8px;
+  margin-right: -8px;
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 3px;
   border-bottom-width: 4px;
   border-bottom-style: solid;
   border-bottom-color: hsl(0deg, 0%, 60%);
-  /*width: 50%;*/
 }
 .indented-heading {
     background-color: hsl(45deg, 100%, 50%);
     border-bottom-width: 4px;
     border-bottom-style: solid;
     border-bottom-color: hsl(45deg, 100%, 40%);
-    width: 50%;
     font-size: 1rem;
-    margin-left: -21px;
+    margin-left: -15px;
     margin-top: 5px;
     padding: 10px;
-    /*align-content: center;  */
+    max-width: 250px;
 }
 
 .max-width-wrapper{
-  /* max-width: 80%;
-  min-width: 200px;*/
-  margin-left: 15%;
-  margin-right: 15%;
- padding-left: 16px;
-  padding-right: 16px;
-  padding: 16px;
+  padding: 8px;
 }
 
 .intro-chunk {
-  width: 60%;
+  width: 320px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 strong {
   color: hsl(160deg, 100%, 30%);
+}
+
+
+/* Add styles for Tablets here! */
+@media (min-width: 768px) {
+
+  .card {
+    background-color: hsl(0, 0%, 100%);
+    margin-top:40px;
+    margin-bottom:40px;
+    padding-top: 3px;
+    border-bottom-width: 4px;
+    border-bottom-style: solid;
+    border-bottom-color: hsl(0deg, 0%, 60%);
+  }
+
+  .max-width-wrapper{
+    padding-left: 16px;
+    padding-right: 16px;
+    padding: 16px;
+  }
+
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+
+  .max-width-wrapper{
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding: 16px;
+  }
+ 
 }
 
